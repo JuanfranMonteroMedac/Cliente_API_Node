@@ -51,21 +51,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
 }
 
+#container article{
+    flex-basis: 12.5%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(172, 171, 171, .8) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+.cardUsu .buttonCard{
+    padding: .4rem;
+    background-color: #e06b59;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttonCard:hover{
+    background-color: #bb4c3b;
+}
 
 
 /* FOOTER */
 footer{
-    position: absolute;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
     background-color: #333;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    padding: .5rem;
     font-size: 1.3rem;
 }
