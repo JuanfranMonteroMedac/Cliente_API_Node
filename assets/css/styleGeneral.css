@@ -103,6 +103,29 @@ body{
     background-color: #3189bd;
 }
 
+#aniadirUsuario{
+    margin-top: 2%;
+}
+#datosUsuarios{
+    display: none;
+}
+#datosUsuarios input{
+    padding: .6rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin: .4rem;
+}
+#datosUsuarios input[type='button']{
+    background-color: #C0E8FF;
+    border: none;
+    padding: .7rem 1rem;
+    margin: .4rem;
+    cursor: pointer;
+}
+#datosUsuarios input[type='button']:hover{
+    background-color: #8dc5e6;
+}
+
 /* VEHICULOS */
 
 #buscador{

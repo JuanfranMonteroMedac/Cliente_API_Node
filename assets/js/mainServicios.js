@@ -10,9 +10,9 @@ window.onload = () => {
     }
 } 
 
-function mostrarVehiculos(id_matricula){
+function mostrarVehiculos(id){
         
-        fetch(`http://localhost:3000/serviceVehicle?id=${id_matricula}`,{
+        fetch(`http://localhost:3000/serviceVehicle?id_matricula=${id}`,{
             method: 'GET',
             mode: 'cors',
             headers: {
@@ -39,7 +39,7 @@ function mostrarVehiculos(id_matricula){
                 let btnDel = document.createElement('input')
                     btnDel.type = 'button'
                     btnDel.className = 'buttonCardDelete'
-                    btnDel.value = 'Elimincar Servicio'
+                    btnDel.value = 'Eliminar Servicio'
                 article.appendChild(btnDel)
                 document.querySelector('#container').appendChild(article)
             }

@@ -45,6 +45,16 @@ window.onload = () => {
         mostarUsuarios()
     })
 
+
+    document.getElementById('aniadirUsuario').addEventListener('click', (e) => {
+        e.stopPropagation()
+        document.getElementById('datosUsuarios').style.display = 'inline-flex'
+        document.querySelector('#datosUsuarios input[type="button"]').onclick = () => {
+            document.getElementById('datosUsuarios').style.display = 'none'
+            alert('Usuario Añadido con Exito (Mentira....)')
+        }
+    })
+
 }
 
 function mostarUsuarios(){
