@@ -154,7 +154,16 @@ body{
 }
 
 
+/* LOCALIZADOR */
+ #containerMap{
+     width: 100%;
+ }
 
+ #map  {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+ }
 
 /* FOOTER */
 footer{
