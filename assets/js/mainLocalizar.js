@@ -7,7 +7,7 @@ window.onload = () => {
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: [-3.257869274676083,39.59890461577057],
-        zoom: 4
+        zoom: 10
     });
 
     document.getElementById('btn').onclick = async () => {
@@ -44,4 +44,10 @@ async function mostrarVehiculoMapa(posiciones){
     const geo = new mapboxgl.Marker()
     .setLngLat([posiciones.LON, posiciones.LAT])
     .addTo(map);
+    map.flyTo({
+        center: [posiciones.LON, posiciones.LAT],
+        essential: true
+    })
+    map.addControl(new mapboxgl.NavigationControl())
+    map.addControl(new mapboxgl.FullscreenControl())
 }
