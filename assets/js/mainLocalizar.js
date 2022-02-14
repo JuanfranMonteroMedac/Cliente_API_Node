@@ -9,6 +9,9 @@ window.onload = () => {
         center: [-3.257869274676083,39.59890461577057],
         zoom: 10
     });
+    map.addControl(new mapboxgl.NavigationControl())
+    map.addControl(new mapboxgl.FullscreenControl())
+    
 
     document.getElementById('btn').onclick = async () => {
     
@@ -48,6 +51,5 @@ async function mostrarVehiculoMapa(posiciones){
         center: [posiciones.LON, posiciones.LAT],
         essential: true
     })
-    map.addControl(new mapboxgl.NavigationControl())
-    map.addControl(new mapboxgl.FullscreenControl())
+
 }
