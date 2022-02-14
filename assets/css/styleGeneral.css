@@ -136,7 +136,7 @@ body{
     margin: 1rem;
 }
 
-#buscador #id_usuario, #id_matricula, #btn{
+#buscador #id_usuario, #id_matricula, #btn, #matricula{
     padding:  .5rem;
     border-radius: 5px;
     border: 1.5px solid #333;
@@ -155,14 +155,9 @@ body{
 
 
 /* LOCALIZADOR */
- #containerMap{
+ #map{
      width: 100%;
- }
-
- #map  {
-     position: absolute;
-     left: 0;
-     bottom: 0;
+     height: 100%;
  }
 
 /* FOOTER */
